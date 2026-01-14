@@ -1,0 +1,39 @@
+# Oracle SQL Developer
+*.db
+*.log
+*.trace
+*.trc
+
+# Database connection files
+*.ora
+tnsnames.ora
+sqlnet.ora
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.backup
+
+# Output files
+*.csv
+*.xlsx
+*.xls
+output/
+results/
+
+# Credentials (never commit these!)
+*password*
+*secret*
+*.key
+credentials.sql
