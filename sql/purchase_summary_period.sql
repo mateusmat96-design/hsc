@@ -12,7 +12,7 @@ JOIN CLL.CLL_F189_INVOICES cfi
 JOIN INV.MTL_SYSTEM_ITEMS_B msi
   ON msi.inventory_item_id = cfli.item_id
  AND msi.organization_id   = cfli.organization_id
-LEFT JOIN CLL.CLL_F189_INVOICE_TYPES# it
+LEFT JOIN CLL.CLL_F189_INVOICE_TYPES it
   ON it.invoice_type_id = cfi.invoice_type_id
 WHERE
   cfi.invoice_date >= ADD_MONTHS(TRUNC(SYSDATE), -12)
